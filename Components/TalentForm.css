@@ -1,0 +1,145 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light background for modern feel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../5680034-hd_1920_1080_24fps.mp4");
+  }
+
+    /* Full-Screen Video Background */
+/* Full-Screen Video Background */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Keeps the video behind other content */
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire screen */
+}
+
+
+  /* Form Container */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+  }
+  
+  /* Form Card */
+  .form-card {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Center alignment */
+    border: 1px solid white;
+    backdrop-filter: blur(5px); /* Applies the blur effect */
+  }
+  
+  
+  /* Form Title */
+  .form-card h1 {
+    font-size: 40px;
+    font-weight:700;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .form-card p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Fields */
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .form-field label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .form-field input,
+  .form-field select {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .form-field input:focus,
+  .form-field select:focus {
+    border-color: #4285f4; /* Google-like blue border */
+    outline: none;
+    background-color: #fff;
+  }
+  
+/* From Uiverse.io by suda-code */ 
+.Submit-btn {
+  width: 100%;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2cfded
+
+  ;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.Submit-btn:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.Submit-btn:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .form-card {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .form-card h1 {
+      font-size: 20px;
+    }
+  
+    .Submit-btn {
+      font-size: 14px;
+    }
+  }
+  
